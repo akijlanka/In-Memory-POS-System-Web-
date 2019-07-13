@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Point Of Sale</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/semantic.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg" style="background-color: #4e555b; z-index: 30000; position: fixed;width: 100%" >
+    <a class="navbar-brand" href="#" style="color: whitesmoke; font-weight: bold; font-size: 30px">POS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+            aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: #0f0f10!important;"></span>
+    </button>
+    <div class="collapse navbar-collapse" >
+
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item " style="margin: 8px 18px 0px 0px">
+                <div class="ui compact menu inbox1" >
+                    <a class="item">
+                        <i class="fas fa-envelope" style="color: #0f0f10!important; padding-right: 3px"></i> Messages
+                        <div class="floating ui red label">2</div>
+                    </a>
+                    <a class="item">
+                        <i class="fas fa-user-check" style="color: #0f0f10!important; padding-right: 3px"></i> Orders
+                        <div class="floating ui teal label">22</div>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item avatar dropdown">
+                <a class="nav-link dropdown-toggle imgadmin" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <img src="img/t4.jpg" class="rounded-circle img"
+                         alt="avatar image">
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
+                     aria-labelledby="navbarDropdownMenuLink-55">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Setting</a>
+                    <a class="dropdown-item" href="#">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div id="wrapper">
+
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+
+                    </li>
+                    <li>
+                        <a href="#" class="active"><i class="fas fa-tachometer-alt iconnav"></i>Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sub_page/customer.html"><i class="fas fa-user-friends iconnav"></i>Customer<h5 style="float: right; margin: 0; padding-top: 10px; padding-right: 15px">+1000</h5></a>
+                    </li>
+                    <li>
+                        <a href="sub_page/item.html"><i class="fas fa-box-open iconnav"></i>Item<h5 style="float: right; margin: 0; padding-top: 10px; padding-right: 15px">+300</h5></a>
+                    </li>
+                    <li>
+                        <a href="sub_page/invoice.html"><i class="fas fa-truck-loading iconnav"></i>Orders<h5 style="float: right; margin: 0; padding-top: 10px; padding-right: 15px">+100</h5></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-address-card iconnav"></i>Report</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chart-pie iconnav"></i>Services</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-id-card-alt iconnav"></i>Profile</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row" style="padding-top: 55px">
+                        <div class="col-lg-12" style="padding-left: 1px; padding-top: 0px">
+                            <a href="#menu-toggle" class="btn btn-default menu-toggle" style="float: left">
+                                <div class="ui animated button" tabindex="0">
+                                    <div class="visible content"><i class="fas fa-arrow-circle-right"></i></div>
+                                    <div class="hidden content">
+                                        <i class="fas fa-arrow-circle-left"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="ui animated button" tabindex="0" style="float: right; margin-top: 7px; background-color: #00a500; color: white">
+                                    <div class="visible content">Place Oaders</div>
+                                    <div class="hidden content">
+                                        <i class="fas fa-cart-plus"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <h3 style="margin: 0; padding-top: 10px; color: #4e555b">Dashboard</h3>
+
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <a href="sub_page/customer.html">
+                            <div class="ui raised link card">
+                                <div class="content content1">
+                                    <img src="img/client.png" alt="" class="iconimg">
+                                    <div class="header">Customer</div>
+                                    <div class="meta">
+                                        <span class="category">Information</span>
+                                    </div>
+                                    <div class="description">
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="extra content">
+                                    <div class="right floated author">
+                                        <i class="fas fa-user-friends"></i> +1000
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="item.html">
+                            <div class="ui raised link card">
+                                <div class="content content2">
+                                    <img src="img/cart.png" alt="" class="iconimg">
+                                    <div class="header">Item</div>
+                                    <div class="meta">
+                                        <span class="category">Information</span>
+                                    </div>
+                                    <div class="description">
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="extra content">
+                                    <div class="right floated author">
+                                        <i class="fas fa-box"></i> +300
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="invoice1.html">
+                            <div class="ui raised link card">
+                                <div class="content content3">
+                                    <img src="img/purchase.png" alt="" class="iconimg">
+                                    <div class="header">Orders</div>
+                                    <div class="meta">
+                                        <span class="category">Information</span>
+                                    </div>
+                                    <div class="description">
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="extra content">
+                                    <div class="right floated author">
+                                        <i class="fas fa-folder-open"></i> +100
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <div class="ui raised link card">
+                                <div class="content content4">
+                                    <img src="img/growth.png" alt="" class="iconimg">
+                                    <div class="header">Reports</div>
+                                    <div class="meta">
+                                        <span class="category">Information</span>
+                                    </div>
+                                    <div class="description">
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="extra content">
+                                    <div class="right floated author">
+                                        <i class="fas fa-file-invoice-dollar"></i> 34
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="ui inverted segment">
+                        <div class="ui inverted relaxed divided list">
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header">Today Sales</div>
+                                    <a class="ui pointing red basic label" style="float: right; margin: 0px">30</a>
+                                    An excellent companion
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header">This week</div>
+                                    A poodle, its pretty basic
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <div class="header">This month</div>
+                                    He's also a dog
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-8">
+                                <table class="ui striped table">
+                                    <thead>
+                                    <tr>
+                                        <th>Customer Name</th>
+                                        <th>Date</th>
+                                        <th>Order ID</th>
+                                        <th>Status</th>
+                                        <th><i class="fas fa-luggage-cart"></i></th>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>John Lilki</td>
+                                        <td>September 14, 2013</td>
+                                        <td>O00058</td>
+                                        <td><button class="ui inverted red button">Edit</button>
+                                        <td><div class="status1"></div></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Jamie Harington</td>
+                                        <td>January 11, 2014</td>
+                                        <td>O00078</td>
+                                        <td><button class="ui secondary button">
+                                            delivered
+                                        </button></td>
+                                        <td><div class="status2"></div></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Jill Lewis</td>
+                                        <td>May 11, 2014</td>
+                                        <td>O00023</td>
+                                        <td><button class="ui inverted green button">Wating</button>
+                                        </td>
+                                        <td><div class="status3"></div></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>John Lilki</td>
+                                        <td>September 14, 2013</td>
+                                        <td>O00045</td>
+                                        <td><button class="ui secondary button">
+                                            delivered
+                                        </button></td>
+                                        <td><div class="status2"></div></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>John Lilki</td>
+                                        <td>September 14, 2013</td>
+                                        <td>O00023</td>
+                                        <td><button class="ui secondary button">
+                                            delivered
+                                        </button></td>
+                                        <td><div class="status2"></div></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Jamie Harington</td>
+                                        <td>January 11, 2014</td>
+                                        <td>O00090</td>
+                                        <td><button class="ui secondary button">
+                                            delivered
+                                        </button></td>
+                                        <td><div class="status2"></div></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Jill Lewis</td>
+                                        <td>May 11, 2014</td>
+                                        <td>O00034</td>
+                                        <td><button class="ui secondary button">
+                                            delivered
+                                        </button>
+                                        </td>
+                                        <td><div class="status2"></div></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>John Lilki</td>
+                                        <td>September 14, 2013</td>
+                                        <td>O00027</td>
+                                        <td>  <button class="ui inverted red button">Edit</button>
+                                        </td>
+                                        <td><div class="status1"></div></td>
+
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-4">
+
+                                <h4>Selling Rate</h4>
+                                <h6>Today</h6>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                </div>
+
+                                <h6 style="padding-top: 5px">This Week</h6>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">78%</div>
+                                </div>
+
+                                <h6 style="padding-top: 5px">This Month</h6>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+                                </div>
+
+                                <h6 style="padding-top: 5px">This Year</h6>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 54%;" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100">54%</div>
+                                </div>
+
+                                <h4>Ordering Rate</h4>
+                                <h6>Today</h6>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                </div>
+
+                                <h6 style="padding-top: 5px">This Week</h6>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">78%</div>
+                                </div>
+
+                                <h6 style="padding-top: 5px">This Month</h6>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+                                </div>
+
+                                <h6 style="padding-top: 5px">This Year</h6>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 54%;" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100">54%</div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="container-fluid">
+                    <div class="row" style="height: 40px; width: 100%;color: #4e555b;">
+                        <h5 style="padding-left: 40px; padding-top: 10px">Developed by Aki @ 2019</h5>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/semantic.js"></script>
+
+
+<script>
+    $(".menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+
+
+
+</body>
+</html>

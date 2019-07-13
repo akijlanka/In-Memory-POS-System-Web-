@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/semantic.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg" style="background-color: #4e555b; z-index: 30000; position: fixed;width: 100%" >
+    <a class="navbar-brand" href="#" style="color: whitesmoke; font-weight: bold; font-size: 30px">POS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+            aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: #0f0f10!important;"></span>
+    </button>
+    <div class="collapse navbar-collapse" >
+
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item " style="margin: 8px 18px 0px 0px">
+                <div class="ui compact menu inbox1" >
+                    <a class="item">
+                        <i class="fas fa-envelope" style="color: #0f0f10!important; padding-right: 3px"></i> Messages
+                        <div class="floating ui red label">2</div>
+                    </a>
+                    <a class="item">
+                        <i class="fas fa-user-check" style="color: #0f0f10!important; padding-right: 3px"></i> Orders
+                        <div class="floating ui teal label">22</div>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item avatar dropdown">
+                <a class="nav-link dropdown-toggle imgadmin" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <img src="../img/t4.jpg" class="rounded-circle img"
+                         alt="avatar image">
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
+                     aria-labelledby="navbarDropdownMenuLink-55">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Setting</a>
+                    <a class="dropdown-item" href="#">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--/.Navbar -->
+<div class="container-fluid">
+    <div class="row">
+        <div id="wrapper">
+
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+
+                    </li>
+                    <li>
+                        <a href="../index.php"><i class="fas fa-tachometer-alt iconnav"></i>Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="customer.html" ><i class="fas fa-user-friends iconnav"></i>Customer<h5 style="float: right; margin: 0; padding-top: 10px; padding-right: 15px">+1000</h5></a>
+                    </li>
+                    <li>
+                        <a href="item.html" class="active"><i class="fas fa-box-open iconnav"></i>Item<h5 style="float: right; margin: 0; padding-top: 10px; padding-right: 15px">+300</h5></a>
+                    </li>
+                    <li>
+                        <a href="invoice.html"><i class="fas fa-truck-loading iconnav"></i>Orders<h5 style="float: right; margin: 0; padding-top: 10px; padding-right: 15px">+100</h5></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-address-card iconnav"></i>Report</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chart-pie iconnav"></i>Services</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-id-card-alt iconnav"></i>Profile</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row" style="padding-top: 55px;">
+                        <div class="col-lg-12" style="padding-left: 1px; padding-top: 0px">
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="#menu-toggle" class="btn btn-default menu-toggle" style="float: left">
+                                        <div class="ui animated button" tabindex="0">
+                                            <div class="visible content"><i class="fas fa-arrow-circle-right"></i></div>
+                                            <div class="hidden content">
+                                                <i class="fas fa-arrow-circle-left"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="ui breadcrumb" style="margin-top: 7px; background-color: white">
+                                        <a class="section">Dashboard</a>
+                                        <i class="fas fa-caret-right divider"></i>
+                                        <a class="section">Item</a>
+                                        <i class="fas fa-caret-right divider"></i>
+                                        <div class="active section" style="color: #0d71bb;">Add</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12" style="background-color: rgba(208,219,225,0.34); padding: 20px;margin-left: 75px; border-radius: 5px">
+                                    <div class="ui form" style="margin-top: 10px;">
+                                        <form class="ui form">
+                                            <h4 class="ui dividing header">Item Information</h4>
+                                            <div class="field">
+                                                <div class="two fields">
+                                                    <div class="field">
+                                                        <label>Item Code</label>
+                                                        <input type="text" name="shipping[first-name]" placeholder="Item Code">
+                                                    </div>
+                                                    <div class="field">
+                                                        <label>Item Name</label>
+                                                        <input type="text" name="shipping[last-name]" placeholder="Item Name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label>Company/Brand</label>
+                                                <div class="fields">
+                                                    <div class="twelve wide field">
+                                                        <input type="text" name="shipping[address]" placeholder="Company/Brand">
+                                                    </div>
+                                                    <div class="four wide field">
+                                                        <input type="text" name="shipping[address-2]" placeholder="ComID#">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="field">
+                                                <label>Supplier</label>
+                                                <div class="fields">
+                                                    <div class="twelve wide field">
+                                                        <input type="text" name="shipping[address]" placeholder="Supplier">
+                                                    </div>
+                                                    <div class="four wide field">
+                                                        <input type="text" name="shipping[address-2]" placeholder="SupID#">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fields">
+                                                <div class="four wide field">
+                                                    <label>Stoke No</label>
+                                                    <input type="number" placeholder="Stock No">
+                                                </div>
+                                                <div class="four wide field">
+                                                    <label>Qty</label>
+                                                    <input type="number" placeholder="Qty">
+                                                </div>
+                                                <div class="four wide field">
+                                                    <label>Price</label>
+                                                    <input type="number" placeholder="Price Rs:">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="fields">
+                                                <div class="seven wide field">
+                                                    <label>Emp Name</label>
+                                                    <input type="text" name="" maxlength="16" placeholder="Emp Name">
+                                                </div>
+                                                <div class="three wide field">
+                                                    <label>Emp ID</label>
+                                                    <input type="text" name="" maxlength="3" placeholder="Emp ID">
+                                                </div>
+                                                <div class="six wide field">
+                                                    <label>Month</label>
+                                                    <div class="two fields">
+                                                        <div class="field">
+                                                            <select class="ui fluid search dropdown" name="card[expire-month]">
+                                                                <option value="">Month</option>
+                                                                <option value="1">January</option>
+                                                                <option value="2">February</option>
+                                                                <option value="3">March</option>
+                                                                <option value="4">April</option>
+                                                                <option value="5">May</option>
+                                                                <option value="6">June</option>
+                                                                <option value="7">July</option>
+                                                                <option value="8">August</option>
+                                                                <option value="9">September</option>
+                                                                <option value="10">October</option>
+                                                                <option value="11">November</option>
+                                                                <option value="12">December</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="field">
+                                                            <input type="text" name="card[expire-year]" maxlength="4" placeholder="Year">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <button class="ui inverted green button">Register</button>
+                                            <button class="ui inverted orange button">Update</button>
+                                            <button class="ui inverted red button">Delete</button>
+
+
+                                        </form>
+
+                                        <table class="ui selectable celled table">
+                                            <thead>
+                                            <tr>
+                                                <th>Item Code</th>
+                                                <th>Item Name</th>
+                                                <th>Company</th>
+                                                <th>Supplier</th>
+                                                <th>Stock No</th>
+                                                <th>Qty</th>
+                                                <th>Price</th>
+
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>John</td>
+                                                <td>No Action</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td>Jamie</td>
+                                                <td>Approved</td>
+                                                <td>Requires call</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jill</td>
+                                                <td>Denied</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                            </tr>
+                                            <tr class="warning">
+                                                <td>John</td>
+                                                <td>No Action</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jamie</td>
+                                                <td class="positive">Approved</td>
+                                                <td class="warning">Requires call</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jill</td>
+                                                <td class="negative">Denied</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                                <td>None</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="container-fluid">
+                            <div class="row" style="height: 40px; width: 100%;color: #4e555b;">
+                                <h5 style="padding-left: 40px; padding-top: 10px">Developed by Aki @ 2019</h5>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/semantic.js"></script>
+<script src="js/myjs.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+    $(".menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+</script>
+</body>
+</html>
